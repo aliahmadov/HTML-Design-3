@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+body {
+    background-color: aqua;
+    padding: 20px;
+    min-height: 100vh;
+    min-width: 50vh;
+}
+
+
+li {
+    display: inline-block;
+    margin: auto;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+a {
+    font-size: 20px;
+    color: gray;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+
+
+
+.header1>ul>li>a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+
+.header1 {
+ 
+    background-color: rgb(19, 16, 46);
+    border: 0px;
+}
+
+.header2 {
+
+    background-color: white;
+    border: 0px;
+    vertical-align: bottom;
+}
+
+.roundedNumber {
+    background-color: gray;
+    border-radius: 15px;
+    color: white;
+    padding: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: inline-block;
+    margin: auto;
+    margin-left: 5px;
+}
+
+
+.header2>ul>button {
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: rgb(0, 168, 225);
+    color: white;
+    font-weight: 500px;
+    padding: 10px 25px 10px 25px;
+    border: 0px;
+    margin: auto;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.header2>ul>button:hover {
+    border: 1px solid black;
+}
+
+.header2>ul>li>a {
+    color: rgb(2, 2, 57);
+}
+
+.header2>ul>li:hover {
+    border-bottom: 5px solid blue;
+    border-radius: 8px;
+
+}
+
+main {
+    background-color: whitesmoke;
+    padding: 35px;
+    text-align: center;
+
+}
+
+.content-table {
+    border-collapse: collapse;
+    font-size: 16px;
+    width: 90%;
+    border: 0.5px solid white;
+    overflow: hidden;
+
+}
+
+
+.content-table th,
+td {
+    padding: 30px 20px;
+    color: rgb(26, 6, 71);
+    text-align: center;
+}
+
+
+.content-table tbody tr {
+    border-bottom: 0.05px dotted gray;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: rgb(232, 232, 232);
+}
+
+
+.content-table tbody tr img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.content-table th:hover {
+    background-color: rgb(3, 3, 73);
+    color: white;
+    font-weight: bold;
+}
+
+.content-table tbody tr:hover {
+    background-color: darkgray;
+    transition: 0.5s;
+}
+
+.content-table thead tr {
+    background-color: white;
+    text-align: left;
+
+}
+
+.thankstatus
+{
+    background-color: rgb(191, 51, 51);
+    color: white;
+    font-size: bold;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.closedstatus
+{
+    background-color:rgb(36, 36, 36);
+    color: white;
+    font-size: bold;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.openstatus
+{
+    background-color:rgb(12, 173, 15);
+    color: white;
+    font-size: bold;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
